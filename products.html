@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Products | Vadilal Ice Cream Shop</title>
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+<link rel="icon" href="assets/images/logo.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<img src="assets/images/logo.png">
+
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="products.html" class="active">Products</a></li>
+
+<li><a href="gallery.html">Gallery</a></li>
+
+<li><a href="offers.html">Offers</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="hero small-hero">
+
+<h1>Premium Ice Cream Collection</h1>
+
+<p>Fresh • Delicious • Original Vadilal</p>
+
+</section>
+
+<section class="products">
+
+<div class="section-title">
+
+<h2>Our Products</h2>
+
+<p>Choose your favourite premium ice cream.</p>
+
+</div>
+
+<input
+type="text"
+id="searchProduct"
+placeholder="Search Ice Cream...">
+
+<div class="product-grid"><!-- PRODUCT 1 -->
+
+<div class="product-card" data-category="cup">
+
+<img src="assets/images/cafe-mocha.jpg" alt="Cafe Mocha">
+
+<h3>Cafe Mocha</h3>
+
+<div class="price">120</div>
+
+<div class="rating">★★★★★</div>
+
+<p>Rich coffee flavour with premium chocolate.</p>
+
+<div class="product-buttons">
+
+<button onclick="addToCart('Cafe Mocha',120)">Add To Cart</button>
+
+<button class="buy-btn">Buy Now</button>
+
+<a href="#" class="wa-btn">WhatsApp Order</a>
+
+<button class="fav-btn">❤</button>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 2 -->
+
+<div class="product-card" data-category="cup">
+
+<img src="assets/images/chocolate.jpg">
+
+<h3>Chocolate Ice Cream</h3>
+
+<div class="price">150</div>
+
+<div class="rating">★★★★★</div>
+
+<p>Premium Belgian chocolate ice cream.</p>
+
+<div class="product-buttons">
+
+<button onclick="addToCart('Chocolate Ice Cream',150)">Add To Cart</button>
+
+<button class="buy-btn">Buy Now</button>
+
+<a href="#" class="wa-btn">WhatsApp Order</a>
+
+<button class="fav-btn">❤</button>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 3 -->
+
+<div class="product-card" data-category="cup">
+
+<img src="assets/images/vanilla.jpg">
+
+<h3>Vanilla Ice Cream</h3>
+
+<div class="price">140</div>
+
+<div class="rating">★★★★★</div>
+
+<p>Classic creamy vanilla delight.</p>
+
+<div class="product-buttons">
+
+<button onclick="addToCart('Vanilla Ice Cream',140)">Add To Cart</button>
+
+<button class="buy-btn">Buy Now</button>
+
+<a href="#" class="wa-btn">WhatsApp Order</a>
+
+<button class="fav-btn">❤</button>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 4 -->
+
+<div class="product-card" data-category="cup">
+
+<img src="assets/images/strawberry.jpg">
+
+<h3>Strawberry Ice Cream</h3>
+
+<div class="price">150</div>
+
+<div class="rating">★★★★★</div>
+
+<p>Fresh strawberry premium flavour.</p>
+
+<div class="product-buttons">
+
+<button onclick="addToCart('Strawberry Ice Cream',150)">Add To Cart</button>
+
+<button class="buy-btn">Buy Now</button>
+
+<a href="#" class="wa-btn">WhatsApp Order</a>
+
+<button class="fav-btn">❤</button>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 5 -->
+
+<div class="product-card" data-category="cup">
+
+<img src="assets/images/mango.jpg">
+
+<h3>Mango Ice Cream</h3>
+
+<div class="price">150</div>
+
+<div class="rating">★★★★★</div>
+
+<p>Made with delicious mango flavour.</p>
+
+<div class="product-buttons">
+
+<button onclick="addToCart('Mango Ice Cream',150)">Add To Cart</button>
+
+<button class="buy-btn">Buy Now</button>
+
+<a href="#" class="wa-btn">WhatsApp Order</a>
+
+<button class="fav-btn">❤</button>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 6 -->
+
+<div class="product-card" data-category="cup">
+
+<img src="assets/images/black-currant.jpg">
+
+<h3>Black Currant</h3>
+
+<div class="price">160</div>
+
+<div class="rating">★★★★★</div>
+
+<p>Rich black currant flavour.</p>
+
+<div class="product-buttons">
+
+<button onclick="addToCart('Black Currant',160)">Add To Cart</button>
+
+<button class="buy-btn">Buy Now</button>
+
+<a href="#" class="wa-btn">WhatsApp Order</a>
+
+<button class="fav-btn">❤</button>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 7 -->
+
+<div class="product-card" data-category="cup">
+
+<img src="assets/images/pista.jpg">
+
+<h3>Pista Ice Cream</h3>
+
+<div class="price">170</div>
+
+<div class="rating">★★★★★</div>
+
+<p>Premium pista with dry fruits.</p>
+
+<div class="product-buttons">
+
+<button onclick="addToCart('Pista Ice Cream',170)">Add To Cart</button>
+
+<button class="buy-btn">Buy Now</button>
+
+<a href="#" class="wa-btn">WhatsApp Order</a>
+
+<button class="fav-btn">❤</button>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 8 -->
+
+<div class="product-card" data-category="kulfi">
+
+<img src="assets/images/kulfi.jpg">
+
+<h3>Kulfi</h3>
+
+<div class="price">90</div>
+
+<div class="rating">★★★★★</div>
+
+<p>Traditional Indian kulfi.</p>
+
+<div class="product-buttons">
+
+<button onclick="addToCart('Kulfi',90)">Add To Cart</button>
+
+<button class="buy-btn">Buy Now</button>
+
+<a href="#" class="wa-btn">WhatsApp Order</a>
+
+<button class="fav-btn">❤</button>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 9 -->
+
+<div class="product-card" data-category="cone">
+
+<img src="assets/images/cone.jpg">
+
+<h3>Ice Cream Cone</h3>
+
+<div class="price">80</div>
+
+<div class="rating">★★★★★</div>
+
+<p>Crispy cone with premium ice cream.</p>
+
+<div class="product-buttons">
+
+<button onclick="addToCart('Cone',80)">Add To Cart</button>
+
+<button class="buy-btn">Buy Now</button>
+
+<a href="#" class="wa-btn">WhatsApp Order</a>
+
+<button class="fav-btn">❤</button>
+
+</div>
+
+</div>
+
+<!-- PRODUCT 10 -->
+
+<div class="product-card" data-category="cup">
+
+<img src="assets/images/cup.jpg">
+
+<h3>Premium Cup</h3>
+
+<div class="price">110</div>
+
+<div class="rating">★★★★★</div>
+
+<p>Premium creamy cup ice cream.</p>
+
+<div class="product-buttons">
+
+<button onclick="addToCart('Premium Cup',110)">Add To Cart</button>
+
+<button class="buy-btn">Buy Now</button>
+
+<a href="#" class="wa-btn">WhatsApp Order</a>
+
+<button class="fav-btn">❤</button>
+
+</div>
+
+  </div><!-- PRODUCT 11 -->
+
+<div class="product-card" data-category="family">
+
+<img src="assets/images/family-pack.jpg" alt="Family Pack">
+
+<h3>Family Pack</h3>
+
+<div class="price">NPR 450</div>
+
+<div class="rating">★★★★★</div>
+
+<p>Perfect family-size premium ice cream.</p>
+
+<div class="product-buttons">
+<button onclick="addToCart('Family Pack',450)">Add To Cart</button>
+<button class="buy-btn">Buy Now</button>
+<a href="#" class="wa-btn">WhatsApp Order</a>
+<button class="fav-btn">❤</button>
+</div>
+
+</div>
+
+<!-- PRODUCT 12 -->
+
+<div class="product-card" data-category="falooda">
+
+<img src="assets/images/falooda.jpg">
+
+<h3>Falooda</h3>
+
+<div class="price">NPR 220</div>
+
+<div class="rating">★★★★★</div>
+
+<p>Refreshing falooda with premium ice cream.</p>
+
+<div class="product-buttons">
+<button onclick="addToCart('Falooda',220)">Add To Cart</button>
+<button class="buy-btn">Buy Now</button>
+<a href="#" class="wa-btn">WhatsApp Order</a>
+<button class="fav-btn">❤</button>
+</div>
+
+</div>
+
+<!-- PRODUCT 13 -->
+
+<div class="product-card" data-category="sundae">
+
+<img src="assets/images/sundae.jpg">
+
+<h3>Sundae</h3>
+
+<div class="price">NPR 180</div>
+
+<div class="rating">★★★★★</div>
+
+<p>Chocolate sundae with crunchy toppings.</p>
+
+<div class="product-buttons">
+<button onclick="addToCart('Sundae',180)">Add To Cart</button>
+<button class="buy-btn">Buy Now</button>
+<a href="#" class="wa-btn">WhatsApp Order</a>
+<button class="fav-btn">❤</button>
+</div>
+
+</div>
+
+<!-- PRODUCT 14 -->
+
+<div class="product-card" data-category="cake">
+
+<img src="assets/images/ice-cream-cake.jpg">
+
+<h3>Ice Cream Cake</h3>
+
+<div class="price">NPR 950</div>
+
+<div class="rating">★★★★★</div>
+
+<p>Premium celebration ice cream cake.</p>
+
+<div class="product-buttons">
+<button onclick="addToCart('Ice Cream Cake',950)">Add To Cart</button>
+<button class="buy-btn">Buy Now</button>
+<a href="#" class="wa-btn">WhatsApp Order</a>
+<button class="fav-btn">❤</button>
+</div>
+
+</div>
+
+<!-- PRODUCT 15 -->
+
+<div class="product-card" data-category="tub">
+
+<img src="assets/images/premium-tub.jpg">
+
+<h3>Premium Tub</h3>
+
+<div class="price">NPR 380</div>
+
+<div class="rating">★★★★★</div>
+
+<p>Large premium tub for sharing.</p>
+
+<div class="product-buttons">
+<button onclick="addToCart('Premium Tub',380)">Add To Cart</button>
+<button class="buy-btn">Buy Now</button>
+<a href="#" class="wa-btn">WhatsApp Order</a>
+<button class="fav-btn">❤</button>
+</div>
+
+</div>
+
+<!-- PRODUCT 16 -->
+
+<div class="product-card" data-category="kids">
+
+<img src="assets/images/kids-special.jpg">
+
+<h3>Kids Special</h3>
+
+<div class="price">NPR 100</div>
+
+<div class="rating">★★★★★</div>
+
+<p>Special colorful ice cream for kids.</p>
+
+<div class="product-buttons">
+<button onclick="addToCart('Kids Special',100)">Add To Cart</button>
+<button class="buy-btn">Buy Now</button>
+<a href="#" class="wa-btn">WhatsApp Order</a>
+<button class="fav-btn">❤</button>
+</div>
+
+</div>
+
+<!-- PRODUCT 17 -->
+
+<div class="product-card" data-category="premium">
+
+<img src="assets/images/royal-collection.jpg">
+
+<h3>Royal Collection</h3>
+
+<div class="price">NPR 350</div>
+
+<div class="rating">★★★★★</div>
+
+<p>Luxury premium collection.</p>
+
+<div class="product-buttons">
+<button onclick="addToCart('Royal Collection',350)">Add To Cart</button>
+<button class="buy-btn">Buy Now</button>
+<a href="#" class="wa-btn">WhatsApp Order</a>
+<button class="fav-btn">❤</button>
+</div>
+
+</div>
+
+<!-- PRODUCT 18 -->
+
+<div class="product-card" data-category="premium">
+
+<img src="assets/images/pista-kunafa.jpg">
+
+<h3>Pista Kunafa</h3>
+
+<div class="price">NPR 240</div>
+
+<div class="rating">★★★★★</div>
+
+<p>Premium pista kunafa flavour.</p>
+
+<div class="product-buttons">
+<button onclick="addToCart('Pista Kunafa',240)">Add To Cart</button>
+<button class="buy-btn">Buy Now</button>
+<a href="#" class="wa-btn">WhatsApp Order</a>
+<button class="fav-btn">❤</button>
+</div>
+
+</div>
+
+<!-- PRODUCT 19 -->
+
+<div class="product-card" data-category="premium">
+
+<img src="assets/images/chocolate-chips.jpg">
+
+<h3>Chocolate Chips</h3>
+
+<div class="price">NPR 190</div>
+
+<div class="rating">★★★★★</div>
+
+<p>Loaded with crunchy chocolate chips.</p>
+
+<div class="product-buttons">
+<button onclick="addToCart('Chocolate Chips',190)">Add To Cart</button>
+<button class="buy-btn">Buy Now</button>
+<a href="#" class="wa-btn">WhatsApp Order</a>
+<button class="fav-btn">❤</button>
+</div>
+
+</div>
+
+<!-- PRODUCT 20 -->
+
+<div class="product-card" data-category="combo">
+
+<img src="assets/images/special-combo.jpg">
+
+<h3>Special Combo</h3>
+
+<div class="price">NPR 299</div>
+
+<div class="rating">★★★★★</div>
+
+<p>Best value combo with multiple flavours.</p>
+
+<div class="product-buttons">
+<button onclick="addToCart('Special Combo',299)">Add To Cart</button>
+<button class="buy-btn">Buy Now</button>
+<a href="#" class="wa-btn">WhatsApp Order</a>
+<button class="fav-btn">❤</button>
+</div>
+
+  </div><!-- PRODUCT 21 -->
+
+<div class="product-card" data-category="premium">
+<img src="assets/images/butterscotch.jpg" alt="Butterscotch">
+<h3>Butterscotch</h3>
+<div class="price">NPR 160</div>
+<div class="rating">★★★★★</div>
+<p>Rich buttery caramel flavour.</p>
+<div class="product-buttons">
+<button onclick="addToCart('Butterscotch',160)">Add To Cart</button>
+<button class="buy-btn">Buy Now</button>
+<a href="#" class="wa-btn">WhatsApp Order</a>
+<button class="fav-btn">❤</button>
+</div>
+</div>
+
+<!-- PRODUCT 22 -->
+
+<div class="product-card" data-category="premium">
+<img src="assets/images/choco-bar.jpg">
+<h3>Chocolate Bar</h3>
+<div class="price">NPR 90</div>
+<div class="rating">★★★★★</div>
+<p>Crispy chocolate coated bar.</p>
+<div class="product-buttons">
+<button onclick="addToCart('Chocolate Bar',90)">Add To Cart</button>
+<button class="buy-btn">Buy Now</button>
+<a href="#" class="wa-btn">WhatsApp Order</a>
+<button class="fav-btn">❤</button>
+</div>
+</div>
+
+<!-- PRODUCT 23 -->
+
+<div class="product-card" data-category="cone">
+<img src="assets/images/cone-premium.jpg">
+<h3>Premium Cone</h3>
+<div class="price">NPR 110</div>
+<div class="rating">★★★★★</div>
+<p>Crunchy cone with premium ice cream.</p>
+<div class="product-buttons">
+<button onclick="addToCart('Premium Cone',110)">Add To Cart</button>
+<button class="buy-btn">Buy Now</button>
+<a href="#" class="wa-btn">WhatsApp Order</a>
+<button class="fav-btn">❤</button>
+</div>
+</div>
+
+<!-- PRODUCT 24 -->
+
+<div class="product-card" data-category="cup">
+<img src="assets/images/cup-deluxe.jpg">
+<h3>Deluxe Cup</h3>
+<div class="price">NPR 130</div>
+<div class="rating">★★★★★</div>
+<p>Premium creamy deluxe cup.</p>
+<div class="product-buttons">
+<button onclick="addToCart('Deluxe Cup',130)">Add To Cart</button>
+<button class="buy-btn">Buy Now</button>
+<a href="#" class="wa-btn">WhatsApp Order</a>
+<button class="fav-btn">❤</button>
+</div>
+</div>
+
+<!-- PRODUCT 25 -->
+
+<div class="product-card" data-category="premium">
+<img src="assets/images/coffee.jpg">
+<h3>Coffee Delight</h3>
+<div class="price">NPR 170</div>
+<div class="rating">★★★★★</div>
+<p>Premium coffee flavoured ice cream.</p>
+<div class="product-buttons">
+<button onclick="addToCart('Coffee Delight',170)">Add To Cart</button>
+<button class="buy-btn">Buy Now</button>
+<a href="#" class="wa-btn">WhatsApp Order</a>
+<button class="fav-btn">❤</button>
+</div>
+</div>
+
+<!-- PRODUCT 26 -->
+
+<div class="product-card" data-category="premium">
+<img src="assets/images/royal-chocolate.jpg">
+<h3>Royal Chocolate</h3>
+<div class="price">NPR 210</div>
+<div class="rating">★★★★★</div>
+<p>Luxury chocolate collection.</p>
+<div class="product-buttons">
+<button onclick="addToCart('Royal Chocolate',210)">Add To Cart</button>
+<button class="buy-btn">Buy Now</button>
+<a href="#" class="wa-btn">WhatsApp Order</a>
+<button class="fav-btn">❤</button>
+</div>
+</div>
+
+<!-- PRODUCT 27 -->
+
+<div class="product-card" data-category="premium">
+<img src="assets/images/mix-fruit.jpg">
+<h3>Mix Fruit</h3>
+<div class="price">NPR 180</div>
+<div class="rating">★★★★★</div>
+<p>Refreshing mixed fruit flavour.</p>
+<div class="product-buttons">
+<button onclick="addToCart('Mix Fruit',180)">Add To Cart</button>
+<button class="buy-btn">Buy Now</button>
+<a href="#" class="wa-btn">WhatsApp Order</a>
+<button class="fav-btn">❤</button>
+</div>
+</div>
+
+<!-- PRODUCT 28 -->
+
+<div class="product-card" data-category="premium">
+<img src="assets/images/almond.jpg">
+<h3>Almond Crunch</h3>
+<div class="price">NPR 220</div>
+<div class="rating">★★★★★</div>
+<p>Loaded with crunchy almonds.</p>
+<div class="product-buttons">
+<button onclick="addToCart('Almond Crunch',220)">Add To Cart</button>
+<button class="buy-btn">Buy Now</button>
+<a href="#" class="wa-btn">WhatsApp Order</a>
+<button class="fav-btn">❤</button>
+</div>
+</div>
+
+<!-- PRODUCT 29 -->
+
+<div class="product-card" data-category="premium">
+<img src="assets/images/hazelnut.jpg">
+<h3>Hazelnut</h3>
+<div class="price">NPR 240</div>
+<div class="rating">★★★★★</div>
+<p>Premium roasted hazelnut flavour.</p>
+<div class="product-buttons">
+<button onclick="addToCart('Hazelnut',240)">Add To Cart</button>
+<button class="buy-btn">Buy Now</button>
+<a href="#" class="wa-btn">WhatsApp Order</a>
+<button class="fav-btn">❤</button>
+</div>
+</div>
+
+<!-- PRODUCT 30 -->
+
+<div class="product-card" data-category="premium">
+<img src="assets/images/signature.jpg">
+<h3>Signature Collection</h3>
+<div class="price">NPR 350</div>
+<div class="rating">★★★★★</div>
+<p>Exclusive premium signature collection.</p>
+<div class="product-buttons">
+<button onclick="addToCart('Signature Collection',350)">Add To Cart</button>
+<button class="buy-btn">Buy Now</button>
+<a href="#" class="wa-btn">WhatsApp Order</a>
+<button class="fav-btn">❤</button>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<script src="assets/js/script.js"></script>
+
+</body>
+  </html>

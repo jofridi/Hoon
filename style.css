@@ -480,14 +480,9 @@ cursor:pointer;
 }
 
 .category-grid div:hover{
-
 background:#d50000;
-
 transform:translateY(-8px);
-
-  /* =========================
-ABOUT
-========================= */
+}
 
 .container{
 display:flex;

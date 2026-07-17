@@ -30,23 +30,25 @@ behavior:"smooth"
 // ===============================
 // BACK TO TOP BUTTON
 // ===============================
+const backTop = document.querySelector(".back-top");
 
-const backTop=document.querySelector(".back-top");
+if (backTop) {
 
-window.addEventListener("scroll",()=>{
+window.addEventListener("scroll", () => {
 
-if(window.scrollY>400){
+if (window.scrollY > 400) {
 
-backTop.style.display="flex";
+backTop.style.display = "flex";
 
-}else{
+} else {
 
-backTop.style.display="none";
+backTop.style.display = "none";
 
 }
 
 });
 
+}
 // ===============================
 // PRODUCT CART
 // ===============================
@@ -123,7 +125,7 @@ alert("Proceeding to checkout for "+product);
 
 function whatsappOrder(product){
 
-const number="9779821208898";
+const number="9779822108898";
 
 const msg="Hello, I want to order "+product;
 
@@ -661,7 +663,7 @@ newsletter.reset();
 }
 
 // Contact Form
-const contactForm=document.querySelector("#contact form");
+const contactForm=document.querySelector(".contact form");
 
 if(contactForm){
 

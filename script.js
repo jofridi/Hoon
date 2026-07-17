@@ -680,18 +680,13 @@ contactForm.reset();
 }
 
 // Buy Buttons
-document.querySelectorAll(".buy-btn").forEach(btn=>{
-
-btn.addEventListener("click",()=>{
-
-const card=btn.closest(".product-card");
-
-const name=card.querySelector("h3").innerText;
-
-buyNow(name);
-
-});
-
+document.querySelectorAll(".product-buttons .cart-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const card = btn.closest(".product-card");
+    const name = card.querySelector("h3").innerText;
+    const price = parseInt(card.querySelector(".price").innerText.replace("NPR",""));
+    addToCart(name, price);
+  });
 });
 
 // WhatsApp Buttons

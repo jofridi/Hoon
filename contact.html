@@ -8,14 +8,13 @@
 
 <title>Contact | Vadilal Ice Cream Shop</title>
 
-<link rel="stylesheet" href="assets/css/style.css">
-
 <link rel="icon" href="assets/images/logo.png">
+
+<link rel="stylesheet" href="assets/css/style.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
 
@@ -39,11 +38,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
 <li><a href="gallery.html">Gallery</a></li>
 
-<li><a href="offers.html">Offers</a></li>
-
-<li><a href="reviews.html">Reviews</a></li>
-
 <li><a href="contact.html" class="active">Contact</a></li>
+
+<li><a href="login.html">Admin</a></li>
 
 </ul>
 
@@ -57,101 +54,191 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
 <p>We are always happy to serve you.</p>
 
-</section>
+</section> 
+  <section class="contact">
 
-<section class="contact">
+<div class="contact-container">
+
+<!-- Contact Information -->
 
 <div class="contact-info">
 
 <h2>Vadilal Ice Cream Shop</h2>
 
-<p><strong>📍 Address:</strong><br>
-Adarsh Nagar Road,<br>
-Birgunj 44300,<br>
+<p>
+Welcome to Vadilal Ice Cream Shop, Birgunj.
+We proudly serve fresh premium Vadilal Ice Creams with excellent quality,
+affordable prices and friendly customer service.
+Visit our shop and enjoy delicious ice creams with your family and friends.
+</p>
+
+<div class="info-box">
+
+<h3>📍 Address</h3>
+
+<p>
+Adarsh Nagar Road<br>
+Birgunj 44300<br>
 Nepal
 </p>
 
-<p><strong>📞 Phone:</strong><br>
+</div>
+
+<div class="info-box">
+
+<h3>📞 Phone</h3>
+
+<p>
+
 <a href="tel:+9779821208898">
+
 +977 9821208898
+
 </a>
+
 </p>
 
-<p><strong>💬 WhatsApp:</strong><br>
-<a href="https://wa.me/9779821208898">
+</div>
+
+<div class="info-box">
+
+<h3>💬 WhatsApp</h3>
+
+<p>
+
+<a href="https://wa.me/9779821208898" target="_blank">
+
 +977 9821208898
+
 </a>
+
 </p>
 
-<p><strong>🕒 Business Hours:</strong><br>
+</div>
+
+<div class="info-box">
+
+<h3>🕒 Business Hours</h3>
+
+<p>
+
 Monday - Sunday<br>
+
 11:00 AM - 10:00 PM
+
 </p>
+
+</div>
 
 <div class="contact-buttons">
 
 <a href="tel:+9779821208898" class="btn">
-Call Now
+
+📞 Call Now
+
 </a>
 
-<a href="https://wa.me/9779821208898" class="btn">
-WhatsApp Chat
+<a href="https://wa.me/9779821208898" class="btn" target="_blank">
+
+💬 WhatsApp Chat
+
 </a>
 
-<a href="https://maps.google.com/?q=Adarsh+Nagar+Road+Birgunj+44300+Nepal" class="btn" target="_blank">
-Open Google Maps
+<a href="https://maps.google.com/?q=Adarsh+Nagar+Road+Birgunj+44300+Nepal"
+class="btn"
+target="_blank">
+
+📍 Open Google Maps
+
 </a>
 
 </div>
 
 </div>
+<!-- Contact Form -->
 
 <div class="contact-form">
 
-<h2>Send Message</h2>
+<h2>Send Us a Message</h2>
 
-<form>
+<form id="contactForm">
 
-<input type="text"
-placeholder="Your Name"
+<input
+type="text"
+name="name"
+placeholder="Your Full Name"
 required>
 
-<input type="email"
-placeholder="Your Email"
+<input
+type="email"
+name="email"
+placeholder="Your Email Address"
 required>
 
-<input type="tel"
-placeholder="Phone Number"
+<input
+type="tel"
+name="phone"
+placeholder="Your Phone Number"
 required>
 
 <textarea
+name="message"
 rows="6"
-placeholder="Your Message"
-required>
-</textarea>
+placeholder="Write Your Message..."
+required></textarea>
 
-<button type="submit">
+<button type="submit" class="btn">
+
 Send Message
+
 </button>
 
 </form>
 
 </div>
 
+</div>
+
 </section>
 
-<section class="map">
+<!-- Google Map -->
+
+<section class="map-section">
+
+<h2>Find Our Shop</h2>
 
 <iframe
 src="https://maps.google.com/maps?q=Adarsh%20Nagar%20Road%20Birgunj%2044300%20Nepal&t=&z=15&ie=UTF8&iwloc=&output=embed"
 width="100%"
 height="450"
 style="border:0;"
-loading="lazy">
+loading="lazy"
+allowfullscreen>
 </iframe>
 
 </section>
-<script src="assets/js/script.js"></script>
 
-</body>
-</html>
+<!-- Newsletter -->
+
+<section class="newsletter">
+
+<h2>Subscribe to Our Newsletter</h2>
+
+<p>Get the latest offers, new products and updates.</p>
+
+<form>
+
+<input
+type="email"
+placeholder="Enter your email"
+required>
+
+<button type="submit">
+
+Subscribe
+
+</button>
+
+</form>
+
+</section>

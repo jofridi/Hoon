@@ -623,7 +623,6 @@ line-height:1.8;
 .map iframe{
 border-radius:20px;
 
-}
 }/* ===========================
 NEWSLETTER
 =========================== */
@@ -796,85 +795,60 @@ RESPONSIVE
 @media(max-width:991px){
 
 header{
-
 flex-direction:column;
-
 padding:15px;
-
 }
 
 nav ul{
-
 flex-wrap:wrap;
-
 justify-content:center;
-
 gap:15px;
-
 }
 
 .hero h1{
-
 font-size:42px;
-
 }
 
 .hero p{
-
 font-size:18px;
-
 }
 
 .container{
-
 flex-direction:column;
-
 }
 
 .about-content{
-
 text-align:center;
-
 }
 
 .section-title h2{
-
 font-size:32px;
-
 }
 
-
+}   /* ← Ye closing bracket missing hai */
 
 @media(max-width:576px){
 
 .hero h1{
-
 font-size:32px;
-
 }
 
 .btn,
 .btn2{
-
 display:block;
-
 margin:10px auto;
-
 width:90%;
-
 }
 
 .newsletter input{
-
 width:100%;
-
 }
 
 .newsletter button{
-
 width:100%;
-
 }
+
+}   /* ← Is media query ka bhi closing bracket hona chahiye */
 /* ===========================
 FINAL PREMIUM STYLES
 =========================== */
